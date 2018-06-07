@@ -10,7 +10,7 @@ class Owner
   def initialize(species)
     @pets = {fishes: [], cats: [], dogs: []}
     @species = species
-    binding.pry
+  #  binding.pry
     @@all << self
   end
 
