@@ -77,15 +77,22 @@ class Owner
   end
 
   def sell_pets
+    
     self.pets[:dogs].each do
       |dog| dog.mood = "nervous"
     end
+    self.pets[:dogs].clear
+    
     self.pets[:fishes].each do
       |fish| fish.mood = "nervous"
     end
+    self.pets[:fishes].clear
+    
     self.pets[:cats].each do
       |cat| cat.mood = "nervous"
     end
+    self.pets[:cats].clear
+    
   end
 
   def list_pets
