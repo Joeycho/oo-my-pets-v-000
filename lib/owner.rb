@@ -67,9 +67,25 @@ class Owner
   end
 
   def feed_fish
+    if self.pets[:fishes] !=[]
+      self.pets[:fishes].each do
+        |fish| fish.mood = "happy"
+      end
+    else
+    end
+
   end
 
   def sell_pets
+    self.pets[:dogs].each do
+      |dog| dog.mood = "nervous"
+    end
+    self.pets[:fishes].each do
+      |fish| fish.mood = "nervous"
+    end
+    self.pets[:cats].each do
+      |cat| cat.mood = "nervous"
+    end
   end
 
   def list_pets
